@@ -8,7 +8,7 @@ require_once 'config/database.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bistro & Coffee - Menú Digital</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,7 +20,7 @@ require_once 'config/database.php';
     <section class="hero">
         <div class="hero-content">
             <h1><i class="fas fa-coffee"></i> Bistro & Coffee</h1>
-            <p class="hero-subtitle">AQUI VA EL SLOGAN Q NO ME ACUERDO COMO VA JSJSJSJ</p>
+            <p class="hero-subtitle">BUEN SABOR, BUEN MOMENTO</p>
             <div class="hero-buttons">
                 <a href="pages/menu.php" class="btn btn-primary"><i class="fas fa-utensils"></i> Ver Menú</a>
                 <a href="pages/reservas.php" class="btn btn-secondary"><i class="fas fa-calendar-check"></i> Reservar</a>
@@ -154,10 +154,10 @@ require_once 'config/database.php';
             <h2 style="font-size: 3rem; margin-bottom: 1rem;">¿Listo para disfrutar?</h2>
             <p style="font-size: 1.3rem; margin-bottom: 2.5rem; opacity: 0.9;">Haz tu pedido o reserva ahora mismo</p>
             <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                <a href="pages/menu.php" class="btn btn-large" style="background: var(--primary); padding: 1.2rem 3rem; font-size: 1.1rem;">
+                <a href="pages/menu.php" class="btn btn-large">
                     <i class="fas fa-shopping-cart"></i> Hacer Pedido
                 </a>
-                <a href="pages/reservas.php" class="btn btn-large" style="background: transparent; border: 2px solid white; color: white; padding: 1.2rem 3rem; font-size: 1.1rem;">
+                <a href="pages/reservas.php" class="btn btn-large">
                     <i class="fas fa-calendar"></i> Reservar Mesa
                 </a>
             </div>

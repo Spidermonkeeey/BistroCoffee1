@@ -1,8 +1,8 @@
 <?php
-$serverName = ".\Terrenal777";  // servidor de tu base de datos en el sqlserver
+$serverName = "localhost";  // servidor de tu base de datos en el sqlserver
 $database = "CoffeBistro"; //NOMBRE EXACTO de la bd que tu usaras en el sqlserver
-$username = "Arirang";           // Tu usuario de la bd
-$password = "terrenal777";  //contraseña de la base de datos
+$username = "luffy";           // Tu usuario de la bd
+$password = "1234";  //contraseña de la base de datos
 
 // Opciones específicas para SQL Server
 $options = [
@@ -24,10 +24,8 @@ try {
     echo "<!-- ✅ SQL Server conectado exitosamente! -->";
     
 } catch(PDOException $e) {
-    // Si hay error, NO rompe la página (modo desarrollo)
-    error_log("Error SQL Server: " . $e->getMessage());
     define('DB_CONNECTED', false);
-    echo "<!-- ⚠️ Error conexión DB - Página sigue funcionando -->";
+    echo "<b>Error: " . $e->getMessage() . "</b>";
 }
 
 // ============================================================================
@@ -36,7 +34,7 @@ try {
 
 function db_query($conn, $sql, $params = []) {
     if (!DB_CONNECTED) {
-        return ['error' => 'DB no disponible'];
+        return false;
     }
     
     try {

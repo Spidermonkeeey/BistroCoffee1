@@ -70,6 +70,11 @@ header {
     object-fit: contain;        /* Mantiene las proporciones */
 }
 
+.logo,
+.logo span {
+    color: var(--white-smoke) !important;
+}
+
 /* Efecto hover opcional */
 .logo:hover {
     transform: scale(1.05);
@@ -316,7 +321,7 @@ body, h1, h2, h3, h4, h5, h6, p, span, label {
 
 /* Párrafos y descripciones */
 p, .menu-desc, .descripcion, label {
-    color: var(--text-secondary) !important;
+    color: var(--text-secondary);
 }
 
 /* Subtítulos y textos secundarios */
@@ -409,4 +414,30 @@ input::placeholder, textarea::placeholder {
     nav a {
         color: var(--white-smoke) !important;
     }
+}
+/* ===== HERO SUBTITLE ===== */
+.hero-subtitle {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    color: var(--dusty-taupe);
+    margin: 0 auto 2rem auto;
+    opacity: 0.92;
+}
+
+/* ===== CTA FINAL - BOTÓN SECUNDARIO ===== */
+.cta-section a.btn[style],
+.cta-section .btn-large {
+    background: rgba(169, 146, 125, 0.18) !important;
+    border: 2px solid var(--dusty-taupe) !important;
+    color: var(--dusty-taupe) !important;
+    backdrop-filter: blur(8px);
+}
+
+.cta-section a.btn[style]:hover,
+.cta-section .btn-large:hover {
+    background: rgba(169, 146, 125, 0.38) !important;
+    transform: translateY(-8px) scale(1.05);
 }
