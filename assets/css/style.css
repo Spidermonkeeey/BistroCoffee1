@@ -441,3 +441,42 @@ input::placeholder, textarea::placeholder {
     background: rgba(169, 146, 125, 0.38) !important;
     transform: translateY(-8px) scale(1.05);
 }
+
+.metodo-pago-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.metodo-card {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--dusty-taupe);
+    border-radius: 10px;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+/* Ocultas el radio real */
+.metodo-card input {
+    display: none;
+}
+
+/* Hover */
+.metodo-card:hover {
+    background: rgba(169, 146, 125, 0.1);
+}
+
+/* Seleccionado */
+.metodo-card:has(input:checked) {
+    background: var(--dusty-taupe);
+    color: var(--white-smoke);
+}
