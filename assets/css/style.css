@@ -6,8 +6,13 @@
     --dusty-taupe: #a9927dff;
     --stone-brown: #5e503fff;
 
+    /*pagina color*/
+    --logo-cream: #F0EBE3;
+    --logo-gray: #8C8C8C;
+
+
     /* Colores semánticos para mejor mantenimiento */
-    --text-primary: var(--black);
+    --text-primary: var(--stone-brown);
     --text-secondary: #4a4035;
     --text-light: #8c7d6f;
     --bg-card: var(--white-smoke);
@@ -34,12 +39,12 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--black);
-    background: var(--white-smoke);
+    background: var(--logo-cream) !important;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, var(--jet-black) 0%, var(--black) 100%);
+    background: var(--logo-gray) !important;
     box-shadow: 0 8px 32px var(--shadow-heavy);
     position: sticky;
     top: 0;
@@ -111,8 +116,7 @@ nav a:hover {
 
 /* Hero */
 .hero, .hero-menu, .hero-reservas {
-    background: linear-gradient(rgba(10,9,8,0.92), rgba(34,51,59,0.85)),
-                linear-gradient(135deg, var(--jet-black), var(--black));
+    background: var(--logo-cream) !important;
     background-size: cover;
     min-height: 70vh;
     display: flex;
@@ -159,7 +163,7 @@ nav a:hover {
     background: var(--white-smoke);
     border-radius: 24px;
     padding: 2.5rem;
-    box-shadow: 0 20px 60px var(--shadow-light);
+    box-shadow: 0 300px 500px var(--shadow-heavy);
     border: 1px solid rgba(169, 146, 125, 0.12);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -303,7 +307,7 @@ section {
 
 /* Texto por defecto */
 body, h1, h2, h3, h4, h5, h6, p, span, label {
-    color: var(--text-primary);
+    color: var(--logo-gray);
 }
 
 /* Cards y contenedores blancos */
@@ -333,7 +337,7 @@ small, .text-muted, .categoria-tag {
 section[style*="background: var(--light)"],
 section[style*="background: #f5f5f5"],
 .buscador-section, .disponibilidad {
-    background: var(--bg-section-light) !important;
+    background: var(--logo-cream) !important;
 }
 
 section[style*="background: var(--light)"] h1,
@@ -356,8 +360,19 @@ input::placeholder, textarea::placeholder {
 
 /* Botones en fondos claros */
 .btn {
-    color: var(--white-smoke) !important;
+    color: var(--white-smoke);
 }
+.btn-outline {
+    background: transparent !important;
+    border: 2px solid var(--dusty-taupe) !important;
+    color: var(--dusty-taupe) !important;
+    box-shadow: none;
+}
+
+.btn-outline:hover {
+    background: rgba(169, 146, 125, 0.1) !important;
+}
+
 
 /* Carrito específico */
 .cart-item {

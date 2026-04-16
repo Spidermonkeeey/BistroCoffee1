@@ -22,8 +22,8 @@ $mensaje = '';
     <!-- HERO RESERVAS -->
     <section class="hero-reservas" style="background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%); color: white; padding: 5rem 2rem; text-align: center;">
         <div class="container">
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;"><i class="fas fa-calendar-check"></i> Reserva tu Mesa</h1>
-            <p style="font-size: 1.3rem;">Disponibilidad en tiempo real • Confirmación inmediata</p>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--stone-brown);"><i class="fas fa-calendar-check"></i> Reserva tu Mesa</h1>
+            <p style="font-size: 1.3rem; color: var(--stone-brown);">Disponibilidad en tiempo real • Confirmación inmediata</p>
         </div>
     </section>
 
@@ -36,7 +36,7 @@ $mensaje = '';
 
             <!-- ESTADO DISPONIBILIDAD -->
             <div class="estado-disponibilidad text-center mb-5">
-                <div class="fecha-info" style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">
+                <div class="fecha-info" style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: var(--stone-brown);">
                     📅 <?= date('d/m/Y', strtotime($fecha)) ?>
                 </div>
                 <div class="status" style="font-size: 1.2rem; padding: 1rem 2rem; border-radius: 50px; display: inline-block;
