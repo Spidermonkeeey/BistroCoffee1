@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <?php include '../includes/header.php'; ?>
+    <?php include 'header.php'; ?>
         
     <!-- HERO SECTION -->
     <section class="hero-menu" style="background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); color: white; padding: 4rem 2rem; text-align: center;">
         <div class="container">
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;"><i class="fas fa-utensils"></i> REALIZA TU PEDIDO</h1>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--stone-brown)"><i class="fas fa-utensils"></i> REALIZA TU PEDIDO</h1>
         </div>
     </section>
 

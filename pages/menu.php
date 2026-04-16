@@ -20,7 +20,7 @@ $productos = getProductos($conn, $busqueda);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <?php include '../includes/header.php'; ?>
+    <?php include 'header.php'; ?>
 
     <!-- HERO MENÚ -->
     <section class="hero-menu" style="background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); color: white; padding: 4rem 2rem; text-align: center;">

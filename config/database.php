@@ -1,7 +1,7 @@
 <?php
 $serverName = "localhost";  // servidor de tu base de datos en el sqlserver
 $database = "CoffeBistro"; //NOMBRE EXACTO de la bd que tu usaras en el sqlserver
-$username = "luffy";           // Tu usuario de la bd
+$username = "alex";           // Tu usuario de la bd
 $password = "1234";  //contraseña de la base de datos
 
 // Opciones específicas para SQL Server

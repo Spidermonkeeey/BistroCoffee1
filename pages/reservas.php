@@ -17,7 +17,7 @@ $mensaje = '';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <?php include '../includes/header.php'; ?>
+    <?php include 'header.php'; ?>
 
     <!-- HERO RESERVAS -->
     <section class="hero-reservas" style="background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%); color: white; padding: 5rem 2rem; text-align: center;">

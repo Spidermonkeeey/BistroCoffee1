@@ -14,7 +14,7 @@ require_once 'config/database.php';
 </head>
 <body>
     <!-- HEADER -->
-    <?php include 'includes/header.php'; ?>
+    <?php include 'header.php'; ?>
 
     <!-- HERO SECTION -->
     <section class="hero">
