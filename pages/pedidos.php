@@ -1,4 +1,3 @@
-//AQUI IRAN LOS PEDIDOS REALIZADOS
 <!DOCTYPE html>
 <html lang="es">
 <head>

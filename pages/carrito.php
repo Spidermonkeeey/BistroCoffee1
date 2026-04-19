@@ -61,21 +61,15 @@ if (!empty($carrito)) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <?php include '../includes/header.php'; ?>
+    <?php include '../pages/header.php'; ?>
 
     <section class="carrito-section" style="padding: 4rem 2rem;">
         <div class="container">
-            <div class="breadcrumb" style="margin-bottom: 2rem;">
-                <a href="../index.php" style="color: var(--dusty-taupe);"><i class="fas fa-home"></i> Inicio</a> 
-                <span style="color: var(--jet-black);">›</span>
-                <span>Carrito</span>
-            </div>
-
             <?php if (empty($carrito)): ?>
                 <div class="empty-cart text-center py-8" style="color: var(--jet-black);">
                     <i class="fas fa-shopping-cart" style="font-size: 6rem; margin-bottom: 2rem; opacity: 0.5;"></i>
-                    <h2>Tu carrito está vacío</h2>
-                    <p>Agrega productos desde el menú</p>
+                    <h2 style="color: var(--stone-brown)">Tu carrito está vacío</h2>
+                    <p style="color: var(--stone-brown)">Agrega productos desde el menú</p>
                     <a href="menu.php" class="btn" style="margin-top: 2rem;">Ver Menú</a>
                 </div>
             <?php else: ?>
@@ -83,7 +77,7 @@ if (!empty($carrito)) {
                     
                     <!-- ÍTEMS -->
                     <div class="items">
-                        <h2 style="margin-bottom: 2rem;"><i class="fas fa-list"></i> Tus productos (<?= count($carrito) ?>)</h2>
+                        <h2 style="margin-bottom: 2rem; color: var(--stone-brown)"><i class="fas fa-list"></i> Tus productos (<?= count($carrito) ?>)</h2>
                         
                         <?php foreach ($carrito as $id => $item): if ($item['cantidad'] > 0): ?>
                             <div class="cart-item card" style="display: flex; gap: 2rem; padding: 2rem; margin-bottom: 1.5rem;">
@@ -95,10 +89,8 @@ if (!empty($carrito)) {
                                     <h4><?= htmlspecialchars($item['nombre']) ?></h4>
                                     <div class="cantidad-control" style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
                                         <label>Cantidad:</label>
-                                        <input type="number" value="<?= $item['cantidad'] ?>" min="1" 
-                                               onchange="updateCantidad(<?= $id ?>, this.value)" 
-                                               style="width: 70px; padding: 0.5rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 8px; text-align: center;">
-                                        <span class="precio-unitario">$<?= number_format($item['precio'], 2) ?></span>
+                                        <input type="number" value="<?= $item['cantidad'] ?>" min="1" onchange="updateCantidad(<?= $id ?>, this.value)" style="width: 70px; padding: 0.5rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 8px; text-align: center;">
+                                        <span class="precio-unitario" style="color: #4a4035">$<?= number_format($item['precio'], 2) ?></span>
                                     </div>
                                 </div>
                                 
@@ -118,13 +110,11 @@ if (!empty($carrito)) {
                         <h3>Resumen de pedido</h3>
                         
                         <div class="resumen-item" style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid rgba(169,146,125,0.1);">
-                            <span>Subtotal</span>
-                            <span>$<?= number_format($total, 2) ?></span>
+                            <span style="color: var(--stone-brown)">Subtotal</span>
+                            <span style="color: #4a4035">$<?= number_format($total, 2) ?></span>
                         </div>
                         
-                        <div class="resumen-item" style="display: flex; justify-content: space-between; padding: 1rem 0; font-size: 1.1rem;"></div>
-                           
-                          <!--aqui se puede agregar la opcion de propina-->  
+                        <div class="resumen-item" style="display: flex; justify-content: space-between; padding: 1rem 0; font-size: 1.1rem;"></div> <!--aqui se puede agregar la opcion de propina-->  
                         
                         <div class="total-final" style="margin-top: 2rem; padding: 2rem; border-radius: 16px; text-align: center;">
                             <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">Total</div>

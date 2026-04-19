@@ -1,4 +1,3 @@
-//ENCABEZADO DE LAS PAGINAS
 <header>
     <nav class="nav-container">
         <link rel="stylesheet" href="../assets/css/style.css?v=42">
@@ -11,7 +10,7 @@
             <li><a href="menu.php">Menú</a></li>
             <li><a href="reservas.php"><i class="fas fa-calendar-check"></i> Reservas</a></li>
             <li><a href="pedidos.php">Pedidos</a></li>
-            <li><a href="../login.php">Admin</a></li>
+            <li><a href="login.php">Admin</a></li>
         </ul>
     </nav>
 </header>

@@ -63,5 +63,3 @@ function getReservasRecientes($conn, $limit = 10) {
     return db_fetch_all($conn, $sql, [$limit]);
 }
 ?>
-
-//AQUI SOLO SIRVE DE AYUDA EN LAS RESERVAS NO HACE MUCHO SOLO LANZAR MENSAJES DE CONFIRMACION
