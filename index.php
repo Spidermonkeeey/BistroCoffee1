@@ -33,7 +33,7 @@ require_once 'config/database.php';
         <div class="container">
             <div class="section-header text-center mb-5">
                 <h2 style="font-size: 3rem; color: var(--stone-brown); margin-bottom: 1rem;">Nuestros Servicios</h2>
-                <p style="font-size: 1.2rem; color: var(--stone-brown); max-width: 600px; margin: 0 auto;">Todo lo que necesitas para una experiencia perfecta</p>
+                <p style="font-size: 1.2rem; color: var(--stone-brown); max-width: 600px; margin: 0 auto; padding: 2rem">Todo lo que necesitas para una experiencia perfecta</p>
             </div>
             
             <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
@@ -69,7 +69,7 @@ require_once 'config/database.php';
         <div class="container">
             <div class="section-header text-center mb-5">
                 <h2 style="font-size: 3rem; color: var(--stone-brown); margin-bottom: 1rem;">Menú Destacado</h2>
-                <p style="font-size: 1.2rem; color: var(--stone-brown);">Nuestras especialidades del día</p>
+                <p style="font-size: 1.2rem; color: var(--stone-brown); padding: 2rem; ">Nuestras especialidades del día</p>
             </div>
             
             <div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
@@ -110,7 +110,7 @@ require_once 'config/database.php';
                 </div>
             </div>
             
-            <div class="text-center mt-5" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; padding: 1rem;">
+            <div class="text-center mt-5" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; padding: 2rem;">
                 <a href="pages/menu.php" class="btn btn-outline">Ver Menú Completo</a>
             </div>
         </div>

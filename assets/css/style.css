@@ -44,7 +44,7 @@ body {
 
 /* Header */
 header {
-    background: var(--logo-gray) !important;
+    background: var(--logo-gray);
     box-shadow: 0 8px 32px var(--shadow-heavy);
     position: sticky;
     top: 0;

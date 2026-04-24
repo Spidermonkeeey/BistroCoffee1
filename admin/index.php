@@ -18,7 +18,7 @@ if (!$usuario || $usuario['rol_nombre'] !== 'Administrador') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Bistro & Coffee</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=43">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body style="background: var(--bg-section-light);">
@@ -53,12 +53,12 @@ if (!$usuario || $usuario['rol_nombre'] !== 'Administrador') {
 
     <!-- MAIN CONTENT -->
     <main class="admin-main" style="margin-left: 280px; padding: 2rem; min-height: 100vh;">
-        <header class="admin-header" style="margin-bottom: 3rem; padding-bottom: 1.5rem; border-bottom: 2px solid rgba(169,146,125,0.2);">
-            <h1 style="color: var(--text-primary); font-size: 2.5rem; margin: 0;">
-                <i class="fas fa-tachometer-alt" style="color: var(--dusty-taupe); margin-right: 1rem;"></i>
+        <header class="admin-header" style="margin-bottom: 3rem; padding-bottom: 1.5rem; border-bottom: 2px solid rgba(169,146,125,0.2); background: var(--dusty-taupe);">
+            <h1 style="color: var(--logo-cream); font-size: 2.5rem; margin: 1rem;">
+                <i class="fas fa-tachometer-alt" style="color: var(--logo-cream); margin-right: 1rem;"></i>
                 Dashboard Administrativo
             </h1>
-            <div style="color: var(--text-secondary); margin-top: 0.5rem;">
+            <div style="color: var(--logo-cream); margin: 1rem">
                 Panel de control • <?= date('d/m/Y H:i') ?>
             </div>
         </header>

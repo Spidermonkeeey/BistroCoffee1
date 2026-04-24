@@ -121,30 +121,23 @@ $productos = db_fetch_all($conn, "SELECT * FROM Productos ORDER BY Id_Producto D
             <form method="POST" enctype="multipart/form-data" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; max-width: 1200px;">
                 <div>
                     <label style="display: block; margin-bottom: 0.75rem; font-weight: 600; color: var(--text-primary);">Nombre del Producto</label>
-                    <input type="text" name="nombre" required 
-                           placeholder="Ej: Pancakes Clásicos" 
-                           style="width: 100%; padding: 1.2rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1rem;">
+                    <input type="text" name="nombre" required placeholder="Ej: Pancakes Clásicos" style="width: 100%; padding: 1.2rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1rem;">
                 </div>
                 
                 <div>
                     <label style="display: block; margin-bottom: 0.75rem; font-weight: 600; color: var(--text-primary);">Precio ($)</label>
-                    <input type="number" name="precio" step="0.01" min="0" required 
-                           placeholder="85.00" 
-                           style="width: 100%; padding: 1.2rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1rem;">
+                    <input type="number" name="precio" step="0.01" min="0" required placeholder="85.00" style="width: 100%; padding: 1.2rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1rem;">
                 </div>
                 
                 <div style="grid-column: span 3;">
                     <label style="display: block; margin-bottom: 0.75rem; font-weight: 600; color: var(--text-primary);">Descripción</label>
-                    <textarea name="descripcion" rows="3" 
-                              placeholder="Descripción detallada del producto..." 
-                              style="width: 100%; padding: 1.2rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1rem; resize: vertical; font-family: inherit;"></textarea>
+                    <textarea name="descripcion" rows="3" placeholder="Descripción detallada del producto..." style="width: 100%; padding: 1.2rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1rem; resize: vertical; font-family: inherit;"></textarea>
                 </div>
 
                 <!-- **NUEVO: Campo de imagen** -->
                 <div style="grid-column: span 3;">
                     <label style="display: block; margin-bottom: 0.75rem; font-weight: 600; color: var(--text-primary);">Imagen del Producto <span style="color: #dc3545;">*</span></label>
-                    <input type="file" name="imagen" accept="image/*" required 
-                           style="width: 100%; padding: 1.2rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1rem;">
+                    <input type="file" name="imagen" accept="image/*" required style="width: 100%; padding: 1.2rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1rem;">
                     <small style="color: var(--text-secondary); font-size: 0.9rem;">Formatos: JPG, PNG, WebP (máx 5MB)</small>
                 </div>
                 
@@ -187,8 +180,7 @@ $productos = db_fetch_all($conn, "SELECT * FROM Productos ORDER BY Id_Producto D
                             <tr style="border-bottom: 1px solid rgba(169,146,125,0.1); transition: all 0.3s;">
                                 <td style="padding: 1.5rem 1.5rem 1.5rem 2rem; background: rgba(169,146,125,0.05);">
                                     <?php if ($producto['Imagen']): ?>
-                                        <img src="../assets/images/productos/<?= htmlspecialchars($producto['Imagen']) ?>" 
-                                             style="width: 60px; height: 60px; object-fit: cover; border-radius: 12px; border: 3px solid rgba(169,146,125,0.2);">
+                                        <img src="../assets/images/productos/<?= htmlspecialchars($producto['Imagen']) ?>" style="width: 60px; height: 60px; object-fit: cover; border-radius: 12px; border: 3px solid rgba(169,146,125,0.2);">
                                     <?php else: ?>
                                         <div style="width: 60px; height: 60px; background: rgba(169,146,125,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--text-light);">
                                             <i class="fas fa-image" style="font-size: 1.5rem;"></i>
