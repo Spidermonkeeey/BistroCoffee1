@@ -195,9 +195,7 @@ $productos = db_fetch_all($conn, "
                                 <span class="input-group-text bg-white border-end-0">
                                     <i class="fas fa-magnifying-glass text-muted"></i>
                                 </span>
-                                <input type="text" name="buscar" class="form-control border-start-0 fs-6 buscador-input py-2" 
-                                       placeholder="🔍 Buscar café, pancakes..." 
-                                       value="<?= htmlspecialchars($_GET['buscar'] ?? '') ?>">
+                                <input type="text" name="buscar" class="form-control border-start-0 fs-6 buscador-input py-2" placeholder="🔍 Buscar café, pancakes..." value="<?= htmlspecialchars($_GET['buscar'] ?? '') ?>">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fas fa-search"></i>
                                 </button>

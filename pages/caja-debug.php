@@ -60,9 +60,7 @@ try {
                 ELSE 'otros'
             END as categoria
         FROM Productos 
-        WHERE activo = 1 
-          AND Precio_Venta IS NOT NULL 
-          AND Precio_Venta > 0
+        WHERE activo = 1 AND Precio_Venta IS NOT NULL AND Precio_Venta > 0
         ORDER BY Nombre
     ");
     $debugInfo['🎯 Productos para Caja'] = count($productosCaja);
