@@ -2,7 +2,6 @@
 require_once '../config/database.php';
 require_once '../includes/auth.php';
 
-
 // Crear usuarios de prueba
 crearUsuariosPrueba($conn);
 
@@ -22,14 +21,13 @@ if ($_POST) {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Bistro & Coffee</title>
-    <link rel="stylesheet" href="../assets/css/style.css?v=42">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body style="background: linear-gradient(135deg, var(--jet-black) 0%, var(--black) 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center;">
@@ -58,12 +56,16 @@ if ($_POST) {
             <form method="POST">
                 <div style="margin-bottom: 2rem;">
                     <label style="display: block; margin-bottom: 0.75rem; font-weight: 600; color: var(--text-primary);">Correo</label>
-                    <input type="email" name="correo" required style="width: 100%; padding: 1.25rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1.1rem; transition: all 0.3s;" placeholder="ejemplo@bistro.com">
+                    <input type="email" name="correo" required 
+                           style="width: 100%; padding: 1.25rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1.1rem; transition: all 0.3s;"
+                           placeholder="ejemplo@bistro.com">
                 </div>
                 
                 <div style="margin-bottom: 2.5rem;">
                     <label style="display: block; margin-bottom: 0.75rem; font-weight: 600; color: var(--text-primary);">Contraseña</label>
-                    <input type="password" name="password" required style="width: 100%; padding: 1.25rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1.1rem; transition: all 0.3s;" placeholder="••••••••">
+                    <input type="password" name="password" required 
+                           style="width: 100%; padding: 1.25rem; border: 2px solid rgba(169,146,125,0.3); border-radius: 12px; font-size: 1.1rem; transition: all 0.3s;"
+                           placeholder="••••••••">
                 </div>
                 
                 <button type="submit" class="btn" style="width: 100%; padding: 1.25rem; font-size: 1.1rem; font-weight: 700;">

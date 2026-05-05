@@ -64,17 +64,17 @@ try {
         <div style="display: flex; gap: 20px; margin-bottom: 3rem; flex-wrap: wrap;">
             <a href="reportes-html.php" target="_blank" class="btn-export" style="background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 20px 40px; text-decoration: none; border-radius: 16px; font-weight: 700; font-size: 16px; box-shadow: 0 8px 25px rgba(0,123,255,0.3); display: flex; align-items: center; gap: 12px;">
                 <i class="fas fa-file-pdf" style="font-size: 24px;"></i>
-                <span>📄 Reporte PDF<br><small>Imprimir/Guardar</small></span>
+                <span style="color: white;">📄 Reporte PDF<br><small style="color: white !important;">Imprimir/Guardar</small></span>
             </a>
             
             <a href="exportar-excel.php?tipo=csv" class="btn-export" style="background: linear-gradient(135deg, #28a745, #1e7e34); color: white; padding: 20px 40px; text-decoration: none; border-radius: 16px; font-weight: 700; font-size: 16px; box-shadow: 0 8px 25px rgba(40,167,69,0.3); display: flex; align-items: center; gap: 12px;">
                 <i class="fas fa-file-csv" style="font-size: 24px;"></i>
-                <span>📊 Exportar CSV<br><small>Abre en Excel</small></span>
+                <span style="color: white;">📊 Exportar CSV<br><small style="color: white !important;">Abre en Excel</small></span>
             </a>
             
-            <a href="exportar-excel.php?tipo=excel" class="btn-export" style="background: linear-gradient(135deg, #ffc107, #e0a800); color: #212529; padding: 20px 40px; text-decoration: none; border-radius: 16px; font-weight: 700; font-size: 16px; box-shadow: 0 8px 25px rgba(255,193,7,0.4); display: flex; align-items: center; gap: 12px;">
+            <a href="exportar-excel.php?tipo=excel" class="btn-export" style="background: linear-gradient(135deg, #ffc107, #e0a800); color: white; padding: 20px 40px; text-decoration: none; border-radius: 16px; font-weight: 700; font-size: 16px; box-shadow: 0 8px 25px rgba(255,193,7,0.4); display: flex; align-items: center; gap: 12px;">
                 <i class="fas fa-file-excel" style="font-size: 24px;"></i>
-                <span>📈 Excel Directo<br><small>Formato .XLS</small></span>
+                <span style="color: white;">📈 Excel Directo<br><small style="color: white !important;">Formato .XLS</small></span>
             </a>
         </div>
 

@@ -21,11 +21,13 @@ try {
     $conn->exec("SET QUOTED_IDENTIFIER ON");
     
     define('DB_CONNECTED', true);
-    echo "<!-- ✅ SQL Server conectado exitosamente! -->";
+    //echo "<!-- SQL Server conectado exitosamente! -->";
     
 } catch(PDOException $e) {
+    // Si hay error, NO rompe la página (modo desarrollo)
+    error_log("Error SQL Server: " . $e->getMessage());
     define('DB_CONNECTED', false);
-    echo "<b>Error: " . $e->getMessage() . "</b>";
+    //echo "<!-- Error conexión DB - Página sigue funcionando -->";
 }
 
 // ============================================================================
@@ -34,7 +36,7 @@ try {
 
 function db_query($conn, $sql, $params = []) {
     if (!DB_CONNECTED) {
-        return false;
+        return ['error' => 'DB no disponible'];
     }
     
     try {
@@ -48,8 +50,18 @@ function db_query($conn, $sql, $params = []) {
 }
 
 function db_fetch_all($conn, $sql, $params = []) {
-    $stmt = db_query($conn, $sql, $params);
-    return $stmt ? $stmt->fetchAll() : [];
+    try {
+        $stmt = $conn->prepare($sql);
+        if (!empty($params)) {
+            $stmt->execute($params);
+        } else {
+            $stmt->execute();
+        }
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (Exception $e) {
+        error_log("db_fetch_all error: " . $e->getMessage());
+        return [];
+    }
 }
 
 function db_fetch_one($conn, $sql, $params = []) {
@@ -60,8 +72,9 @@ function db_fetch_one($conn, $sql, $params = []) {
 // ✅ MODO DEBUG - Quita en producción
 if (isset($_GET['debug'])) {
     echo "<pre>";
-    echo "DB Status: " . (DB_CONNECTED ? '✅ CONECTADO' : '❌ FALLÓ') . "\n";
+    echo "DB Status: " . (DB_CONNECTED ? 'CONECTADO' : 'FALLÓ') . "\n";
     echo "Driver: sqlsrv\n";
     echo "</pre>";
 }
+
 ?>

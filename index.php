@@ -14,7 +14,7 @@ require_once 'config/database.php';
 </head>
 <body>
     <!-- HEADER -->
-    <?php include 'header.php'; ?>
+    <?php include 'includes/header.php'; ?>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -29,11 +29,11 @@ require_once 'config/database.php';
     </section>
 
     <!-- SERVICIOS PRINCIPALES -->
-    <section class="services-section" style="padding: 6rem 2rem; background: var(--logo-cream);">
+    <section class="services-section" style="padding: 0.80rem 0.5rem; background: var(--logo-cream);">
         <div class="container">
             <div class="section-header text-center mb-5">
                 <h2 style="font-size: 3rem; color: var(--stone-brown); margin-bottom: 1rem;">Nuestros Servicios</h2>
-                <p style="font-size: 1.2rem; color: var(--stone-brown); max-width: 600px; margin: 0 auto; padding: 2rem">Todo lo que necesitas para una experiencia perfecta</p>
+                <p style="font-size: 1.2rem; color: var(--stone-brown); max-width: 600px; margin: 0 auto; padding: 1.5rem;">Todo lo que necesitas para una experiencia perfecta</p>
             </div>
             
             <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
@@ -42,7 +42,7 @@ require_once 'config/database.php';
                         <i class="fas fa-laptop"></i>
                     </div>
                     <h3>Menú Digital</h3>
-                    <p>Explora nuestro menú interactivo con fotos HD, descripciones detalladas y precios actualizados en tiempo real.</p>
+                    <p>Explora nuestro menú interactivo con fotos, descripciones detalladas y precios actualizados en tiempo real.</p>
                 </div>
                 
                 <div class="service-card card">
@@ -69,7 +69,7 @@ require_once 'config/database.php';
         <div class="container">
             <div class="section-header text-center mb-5">
                 <h2 style="font-size: 3rem; color: var(--stone-brown); margin-bottom: 1rem;">Menú Destacado</h2>
-                <p style="font-size: 1.2rem; color: var(--stone-brown); padding: 2rem; ">Nuestras especialidades del día</p>
+                <p style="font-size: 1.2rem; color: var(--stone-brown); padding: 1.5rem;">Nuestras especialidades del día</p>
             </div>
             
             <div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
@@ -110,7 +110,7 @@ require_once 'config/database.php';
                 </div>
             </div>
             
-            <div class="text-center mt-5" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; padding: 2rem;">
+            <div class="text-center mt-5" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; padding: 1.5rem;">
                 <a href="pages/menu.php" class="btn btn-outline">Ver Menú Completo</a>
             </div>
         </div>

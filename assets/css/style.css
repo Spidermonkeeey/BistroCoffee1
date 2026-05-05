@@ -73,8 +73,13 @@ header {
     width: auto;
     max-width: 100px;           /* Evita que sea demasiado ancho */
     object-fit: contain;        /* Mantiene las proporciones */
+    border-radius: 50%;
+    transform: translateY(-25px);
 }
 
+.logo-img:hover {
+    transform: translateY(-25px);
+}
 .logo,
 .logo span {
     color: var(--white-smoke) !important;
